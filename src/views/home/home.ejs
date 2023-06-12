@@ -8,25 +8,27 @@
       </h1>
 
       <section class="box-card">
-        <article>
-          <a href="" class="edit">
-            <i class="fa-solid fa-pen-to-square"></i>
-          </a>
-          <a href="" class="remove">
-            <i class="fa-solid fa-trash"></i>
-          </a>
-          <figure>
-            <img
-              src="https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-              alt="Product">
-            <figcaption>
-              <h2>Nice Chair</h2>
-              <h3>$57</h3>
-            </figcaption>
-          </figure>
-        </article>
+        <% data.forEach(function(item) { %>
+          <article>
+            <a href="/products/edit/<%= item.id %>" class="edit">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </a>
+            <a href="/products/remove/<%= item.id %>" class="remove">
+              <i class="fa-solid fa-trash"></i>
+            </a>
+            <figure>
+              <img
+                src="<%= item.image %>"
+                alt="Product">
+              <figcaption>
+                <h2><%= item.name %></h2>
+                <h3><%= item.price %></h3>
+              </figcaption>
+            </figure>
+          </article>
+          <% }) %>
       </section>
     </div>
   </main>
 
-<%- include('../partials/footer.ejs') %>
+  <%- include('../partials/footer.ejs') %>
