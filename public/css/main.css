@@ -1,0 +1,89 @@
+:root {
+  --bg-primary: #0d1117;
+  --bg-secondary: #161B22;
+  --grey: #7d8590;
+  --secondary: #1F6FEB;
+  --light: #F3F3F3;
+  --success: #04D361;
+  --danger: #E83F5B;
+  --alert: #FD8A00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--light);
+}
+
+/* Global */
+.container {
+  width: 1280px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  background: var(--bg-secondary);
+  padding: .5rem 0;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul div {
+  display: flex;
+}
+header nav ul li:not(:last-child) { 
+  margin-right: 1rem;
+}
+header nav li a {
+  color: var(--grey);
+}
+header nav li a:hover {
+  color: var(--light);
+}
+header nav li a.active {
+  color: var(--light);
+}
+header label {
+  width: 54px;
+  background: var(--light);
+  padding: .2rem .3rem;
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+header .fa-sun {
+  color: var(--alert);
+}
+header .fa-moon {
+  color: var(--secondary);
+}
+header label .fa-circle {
+  color: var(--bg-secondary);
+  position: absolute;
+  font-size: 1.1rem;
+  left: 4px;
+  top: 3px;
+  transform: translateX(0px);
+  transition: all .3s linear;
+}
+header label .fa-circle.checked {
+  transform: translateX(29px);
+}
+header .switch {
+  opacity: 0;
+  position: absolute;
+}
+

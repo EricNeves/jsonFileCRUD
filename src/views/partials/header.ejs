@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    <%= title %>
+  </title>
+
+  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <div>
+            <li>
+              <a class="<%= path == '/' ? 'active' : ''  %>" href="">Home</a>
+            </li>
+            <li>
+              <a class="<%= path == '/add' ? 'active' : ''  %>" href="">Add Product</a>
+            </li>
+          </div>
+          
+          <div>
+            <li>
+              <label for="check">
+                <input type="checkbox" class="switch" id="check">
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-circle"></i>
+              </label>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </header>

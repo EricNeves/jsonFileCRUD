@@ -1,3 +1,6 @@
 exports.index = (req, res) => {
-  res.json("I'm here")
+  res.render('home/home', {
+    title: 'Home - Shop',
+    path: '/'
+  })
 }
