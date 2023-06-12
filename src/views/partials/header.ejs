@@ -10,12 +10,12 @@
     <%= title %>
   </title>
 
-  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
@@ -26,10 +26,14 @@
         <ul>
           <div>
             <li>
-              <a class="<%= path == '/' ? 'active' : ''  %>" href="">Home</a>
+              <a class="<%= path == '/' ? 'active' : ''  %>" href="/">
+                Home
+              </a>
             </li>
             <li>
-              <a class="<%= path == '/add' ? 'active' : ''  %>" href="">Add Product</a>
+              <a class="<%= path == '/products/create' ? 'active' : ''  %>" href="/products/create">
+                Add Product
+              </a>
             </li>
           </div>
           
