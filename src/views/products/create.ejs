@@ -8,8 +8,12 @@
         Add a new Product
         <i class="fa-solid fa-cart-plus"></i>
       </h1>
+
+      <% if (message) { %>
+        <p class="error"><%= message %></p>
+      <% } %>
       
-      <form action="" method="POST">
+      <form action="/products/create" method="POST">
         <input type="text" name="name" placeholder="Name">
         <input type="number" name="price" step="0.01" placeholder="Price">
         <input type="text" name="image" placeholder="Image URL">

@@ -5,7 +5,7 @@
   --secondary: #007BFF;
   --light: #F3F3F3;
   --success: #28A745;
-  --danger: #FFC107;
+  --danger: #eb3838;
   --alert: #FD8A00;
   --white: #ffffff;
 
@@ -166,6 +166,9 @@ main article .remove {
 .form h1 {
   margin-top: -1rem;
   color: var(--text-secondary);
+}
+.error {
+  color: var(--danger);
 }
 .box-form {
   margin-top: 3rem;

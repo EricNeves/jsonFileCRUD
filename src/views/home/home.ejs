@@ -17,16 +17,18 @@
               <i class="fa-solid fa-trash"></i>
             </a>
             <figure>
-              <img
-                src="<%= item.image %>"
-                alt="Product">
+              <img src="<%= item.image %>" alt="Product">
               <figcaption>
-                <h2><%= item.name %></h2>
-                <h3><%= item.price %></h3>
+                <h2>
+                  <%= item.name %>
+                </h2>
+                <h3>
+                  <%= item.price %>
+                </h3>
               </figcaption>
             </figure>
           </article>
-          <% }) %>
+        <% }) %>
       </section>
     </div>
   </main>

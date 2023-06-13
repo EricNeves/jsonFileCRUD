@@ -13,6 +13,13 @@ class Product {
     const data = await this._currentFileData()
     return data
   }
+
+  async create(data) {
+    const dataFromFile = await this._currentFileData()
+    dataFromFile.unshift(data)
+
+    return dataFromFile
+  }
 }
 
 module.exports = Product
