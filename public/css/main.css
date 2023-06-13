@@ -169,10 +169,10 @@ main .header-cards {
 main .header-cards  ul {
   display: flex;
   align-items: center;
-  gap: 2rem;
 }
 main .header-cards li a {
   color: var(--secondary);
+  margin-left: 1.4rem;
 }
 main .header-cards li a:hover {
   text-decoration: underline;

@@ -9,18 +9,29 @@
         </h1>
 
         <ul>
-          <li>
-            <a href="">
-              <i class="fa-solid fa-angles-left"></i>
-              Next Products
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Next Products
-              <i class="fa-solid fa-angles-right"></i>
-            </a>
-          </li>
+          <% if (previous) { %>
+            <li>
+              <a href="/?initial=<%= initialFormatted %>&offset=<%= offsetFormatted %>" id="previous">
+                <i class="fa-solid fa-angles-left"></i>
+                Previous
+              </a>
+            </li>
+          <% } else { %>
+            <li>
+              <a href="" style="display: none;" id="previous"></a>
+            </li>
+          <% } if(lastProducts) { %>
+            <li>
+              <a href="" style="display: none;" id="next"></a>
+            </li>
+          <% } else { %>
+            <li>
+              <a href="/?initial=<%= initialFormatted %>&offset=<%= offsetFormatted %>" id="next">
+                Next Products
+                <i class="fa-solid fa-angles-right"></i>
+              </a>
+            </li>
+          <% } %>
         </ul>
       </section>
       <% if (data.length===0) { %>
@@ -51,5 +62,5 @@
           </section>
     </div>
   </main>
-
+  <script src="/js/pagination.js"></script>
   <%- include('../partials/footer.ejs') %>
