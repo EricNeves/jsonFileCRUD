@@ -6,7 +6,9 @@
         Products
         <i class="fa-solid fa-cart-shopping"></i>
       </h1>
-
+      <% if (data.length === 0) { %>
+        <p class="empty-products">Sem Produtos</p>
+      <% } %>
       <section class="box-card">
         <% data.forEach(function(item) { %>
           <article>

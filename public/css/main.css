@@ -155,6 +155,9 @@ main article .remove {
   color: var(--light);
   background: var(--danger);
 }
+.empty-products {
+  color: var(--text-gray);
+}
 
 .form {
   margin-top: 1rem;

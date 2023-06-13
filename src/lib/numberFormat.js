@@ -10,6 +10,5 @@ function convertMoneytoNumber(amount) {
 }
 
 module.exports = {
-  convertValueToMoney,
-  convertMoneytoNumber
+  convertValueToMoney, convertMoneytoNumber
 }
