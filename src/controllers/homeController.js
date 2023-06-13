@@ -8,7 +8,7 @@ const products = new Product({
 exports.index = async (req, res) => {
   try {
     const data = await products.fetchAll()
-
+    
     res.render('home/home', {
       title: 'Home - Shop',
       path: '/',

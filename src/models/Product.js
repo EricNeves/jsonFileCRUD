@@ -10,8 +10,8 @@ class Product {
   }
 
   async fetchAll() {
-    const data = await this._currentFileData()
-    return data
+    const dataFromFile = await this._currentFileData()
+    return dataFromFile
   }
 
   async create(data) {
@@ -22,6 +22,22 @@ class Product {
     return {
       created: true
     }
+  }
+
+  async getById(productId) {
+    const dataFromFile = await this._currentFileData()
+
+    const product = dataFromFile.find(({ id }) => id === productId)
+
+    return product
+  }
+
+  async update(productID, data) { 
+    const dataFromFile = await this._currentFileData()
+
+    const productIndex = dataFromFile.findIndex(({ id }) => id === productID)
+
+    return productIndex
   }
 }
 

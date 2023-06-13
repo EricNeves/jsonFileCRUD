@@ -1,7 +1,7 @@
 const { join } = require('path')
 
-const { convertValueToMoney } = require('../lib/toMoney')
 const { uuid } = require('../lib/generateID')
+const { convertValueToMoney, convertMoneytoNumber } = require('../lib/numberFormat')
 
 const Product = require('../models/Product')
 const product = new Product({
@@ -16,35 +16,56 @@ exports.index = (req, res) => {
   })
 }
 
-exports.editPage = (req, res) => {
-  res.render('products/edit', {
-    title: 'Update Product',
-    path: '/products/edit',
-  })
-}
-
 exports.create = async (req, res) => {
   const { name, price, image } = req.body
-  const priceFormatted = convertValueToMoney(price)
 
-  if (!name || !priceFormatted || !image) {
+  if (!name || !price || !image) {
     return res.redirect('/products/create')
   }
+
+  const priceFormatted = convertValueToMoney(price)
 
   try {
     await product.create({ 
       id: uuid(),
       name, 
-      price: priceFormatted, 
+      price: priceFormatted,
       image
     })
     return res.redirect('/')
 
   } catch (err) {
-    res.render('products/create', {
+    return res.render('products/create', {
       title: 'Create Product',
       path: '/products/create',
       error: 'Sorry, could not create a new product',
     })
   }
 }
+
+exports.editPage = async (req, res) => {
+  const { id } = req.params
+
+  const data = await product.getById(id)
+
+  if (!data) {
+    return res.redirect('/')
+  }
+
+  data.price = convertMoneytoNumber(data.price)
+
+  res.render('products/edit', {
+    title: 'Update Product',
+    path: '/products/edit',
+    data
+  })
+}
+
+exports.editProduct = async (req, res) => {
+  const { id, name, price, image } = req.body
+
+  const data = await product.update(id, { name, price, image })
+
+  res.json(data)
+}
+
