@@ -25,7 +25,7 @@
 ![screenshot](.github/screenshotA.png)
 ![screenshot](.github/screenshotB.png)
 
-Website: [JsonFileCRUD](https://json-file-crud.vercel.app/)
+Website: [JsonFileCRUD](https://jsonfilecrud.onrender.com/)
 
 ### Features
 
