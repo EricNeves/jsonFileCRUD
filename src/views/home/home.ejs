@@ -2,36 +2,53 @@
 
   <main>
     <div class="container">
-      <h1>
-        Products
-        <i class="fa-solid fa-cart-shopping"></i>
-      </h1>
-      <% if (data.length === 0) { %>
-        <p class="empty-products">Sem Produtos</p>
-      <% } %>
-      <section class="box-card">
-        <% data.forEach(function(item) { %>
-          <article>
-            <a href="/products/edit/<%= item.id %>" class="edit">
-              <i class="fa-solid fa-pen-to-square"></i>
+      <section class="header-cards">
+        <h1>
+          Products
+          <i class="fa-solid fa-cart-shopping"></i>
+        </h1>
+
+        <ul>
+          <li>
+            <a href="">
+              <i class="fa-solid fa-angles-left"></i>
+              Next Products
             </a>
-            <a href="/products/remove/<%= item.id %>" class="remove">
-              <i class="fa-solid fa-trash"></i>
+          </li>
+          <li>
+            <a href="">
+              Next Products
+              <i class="fa-solid fa-angles-right"></i>
             </a>
-            <figure>
-              <img src="<%= item.image %>" alt="Product">
-              <figcaption>
-                <h2>
-                  <%= item.name %>
-                </h2>
-                <h3>
-                  <%= item.price %>
-                </h3>
-              </figcaption>
-            </figure>
-          </article>
-        <% }) %>
+          </li>
+        </ul>
       </section>
+      <% if (data.length===0) { %>
+        <p class="empty-products">Sem Produtos</p>
+        <% } %>
+          <section class="box-card">
+            <% data.forEach(function(item) { %>
+              <article>
+                <a href="/products/edit/<%= item.id %>" class="edit">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                </a>
+                <a href="/products/remove/<%= item.id %>" class="remove">
+                  <i class="fa-solid fa-trash"></i>
+                </a>
+                <figure>
+                  <img src="<%= item.image %>" alt="Product">
+                  <figcaption>
+                    <h2>
+                      <%= item.name %>
+                    </h2>
+                    <h3>
+                      <%= item.price %>
+                    </h3>
+                  </figcaption>
+                </figure>
+              </article>
+              <% }) %>
+          </section>
     </div>
   </main>
 

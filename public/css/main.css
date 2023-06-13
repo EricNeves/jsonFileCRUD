@@ -100,6 +100,7 @@ header .switch {
   position: absolute;
 }
 
+
 main {
   margin: 1rem 0;
 }
@@ -107,6 +108,7 @@ main .box-card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+  margin-bottom: 3rem;
 }
 main article {
   max-width: 100%;
@@ -157,6 +159,23 @@ main article .remove {
 }
 .empty-products {
   color: var(--text-gray);
+}
+main .header-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 0 1.2rem 0;
+}
+main .header-cards  ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+main .header-cards li a {
+  color: var(--secondary);
+}
+main .header-cards li a:hover {
+  text-decoration: underline;
 }
 
 .form {
