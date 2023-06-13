@@ -22,7 +22,8 @@
   <a href="#author">Author</a>
 </p>
 
-![screenshot]()
+![screenshot](.github/screenshotA.png)
+![screenshot](.github/screenshotB.png)
 
 ### Features
 
