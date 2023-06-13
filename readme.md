@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  ![Image](.github/icon.png)
+  <img src=".github/icon.png">
   <br>
   JSON File CRUD 
   <br>
