@@ -4,8 +4,7 @@
   "description": "",
   "main": "src/server.js",
   "scripts": {
-    "dev": "node --watch --trace-warnings src/server.js",
-    "test": "mocha **/*.test.js"
+    "dev": "node --watch --trace-warnings src/server.js"
   },
   "keywords": [],
   "author": "",
