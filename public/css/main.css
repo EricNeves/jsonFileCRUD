@@ -249,6 +249,14 @@ main .header-cards li a:hover {
   main .box-card img {
     height: 300px;
   }
+  main .header-cards {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 3.5rem 0;
+  }
+  main .header-cards li a {
+    margin: 0rem 1rem;
+  }
   .form h1 {
     font-size: 1.1rem;
   }
