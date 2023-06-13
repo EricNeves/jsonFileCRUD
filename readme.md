@@ -16,9 +16,10 @@
 </p>
 
 <p align="center">
-  <a href="#key-features">Features</a> •
+  <a href="#features">Features</a> •
   <a href="#how-to-use">How to use ?</a> •
   <a href="#license">License</a>
+  <a href="#author">Author</a>
 </p>
 
 ![screenshot]()
@@ -36,7 +37,7 @@ A aplicação explora diversos recursos, como rotas, leituras e escrita de arqui
 * Javascript
   - Switch Theme
 
-## How To Use
+### How To Use
 
 ```bash
 # Clone repository
@@ -56,10 +57,11 @@ $ pnpm run dev
 > Você precisará ter o gerenciador de pacotes `pnpm` para executar a aplicação, você poderá instalá-lo a partir do comando `npm i -g pnpm`.
 
 
-## License
+### License
 
 <img src="https://img.shields.io/github/license/ericneves/jsonFileCRUD?color=blue&style=flat-square" alt="License">
 
 ---
 
+### Author
 > Author: [@ericneves](https://www.instagram.com/ericneves_dev/) 
