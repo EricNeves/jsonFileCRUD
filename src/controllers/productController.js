@@ -70,11 +70,28 @@ exports.editProduct = async (req, res) => {
 
   try {
     const priceFormatted = convertValueToMoney(price)
-    await product.update({id, name, price: priceFormatted, image })
+    const result = await product.update({id, name, price: priceFormatted, image })
   
+    if (!result) {
+      return res.redirect(`/products/edit/${id}`)
+    } 
     return res.redirect('/')
   } catch (err) {
     return res.redirect(`/products/edit/${id}`)
+  }
+}
+
+exports.deleteProduct = async (req, res) => {
+  const { id } = req.params
+
+  try {
+    const result = await product.delete(id)
+
+    if (!result) return res.redirect('/')
+
+    res.redirect('/')
+  } catch (err) {
+    res.redirect('/')
   }
 }
 

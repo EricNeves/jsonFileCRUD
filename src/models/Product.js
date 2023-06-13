@@ -19,9 +19,7 @@ class Product {
     dataFromFile.unshift(data)
     await writeFile(this.file, JSON.stringify(dataFromFile, null, 2))
 
-    return {
-      created: true
-    }
+    return true
   }
 
   async getById(productId) {
@@ -36,6 +34,9 @@ class Product {
     const dataFromFile = await this._currentFileData()
 
     const productIndex = dataFromFile.findIndex(({ id }) => id === data.id)
+
+    if (productIndex === -1) return false
+
     dataFromFile.splice(productIndex, 1)
 
     const currentProduct = dataFromFile[productIndex]
@@ -44,9 +45,21 @@ class Product {
 
     await writeFile(this.file, JSON.stringify([...dataFromFile, updatedProduct], null, 2))
 
-    return {
-      updated: true
-    }
+    return true
+  }
+
+  async delete(productId) {
+    const dataFromFile = await this._currentFileData()
+
+    const productIndex = dataFromFile.findIndex(({ id }) => id === productId)
+
+    if (productIndex === -1) return false
+
+    dataFromFile.splice(productIndex, 1)
+
+    await writeFile(this.file, JSON.stringify([...dataFromFile], null, 2))
+
+    return true
   }
 }
 
