@@ -25,6 +25,8 @@
 
 ### Features
 
+A aplicação explora diversos recursos, como rotas, leituras e escrita de arquivos, uma simples paginação e muito mais..
+
 * NodeJS
   - ExpressJS
   - EJS
