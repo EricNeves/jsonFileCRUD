@@ -1,44 +1,8 @@
 [
   {
-    "id": "033047f1af20bb",
+    "id": "123",
     "name": "Eric Neves Rodrigues ",
-    "price": "$22,222,222.00",
+    "price": "$1,222.00",
     "image": "https://m.media-amazon.com/images/I/611mRs-imxL.__AC_SY445_SX342_QL70_ML2_.jpg"
-  },
-  {
-    "id": "09227dee040168",
-    "name": "Eric Neves Rodrigues ",
-    "price": "222",
-    "image": "https://m.media-amazon.com/images/I/51Ckulv1P+L.jpg"
-  },
-  {
-    "id": "0da495a77cade6",
-    "name": "Rocket",
-    "price": "3456345",
-    "image": "https://images.pexels.com/photos/256297/pexels-photo-256297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  },
-  {
-    "id": "0076977cc6ca1b",
-    "name": "Instrumental",
-    "price": "765",
-    "image": "https://images.pexels.com/photos/2876659/pexels-photo-2876659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  },
-  {
-    "id": "00d6222fe8152f",
-    "name": "Headset",
-    "price": "200",
-    "image": "https://images.pexels.com/photos/3587478/pexels-photo-3587478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  },
-  {
-    "id": "01304592efc5e8",
-    "name": "Plant",
-    "price": "40",
-    "image": "https://images.pexels.com/photos/2280551/pexels-photo-2280551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  },
-  {
-    "id": "06126ebb8ba5bd",
-    "name": "Digital Cam",
-    "price": "1200",
-    "image": "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   }
 ]

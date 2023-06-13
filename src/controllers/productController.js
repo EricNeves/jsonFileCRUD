@@ -46,26 +46,35 @@ exports.create = async (req, res) => {
 exports.editPage = async (req, res) => {
   const { id } = req.params
 
-  const data = await product.getById(id)
-
-  if (!data) {
+  try {
+    const data = await product.getById(id)
+  
+    data.price = convertMoneytoNumber(data.price)
+  
+    return res.render('products/edit', {
+      title: 'Update Product',
+      path: '/products/edit',
+      data,
+    })
+  } catch (err) {
     return res.redirect('/')
   }
-
-  data.price = convertMoneytoNumber(data.price)
-
-  res.render('products/edit', {
-    title: 'Update Product',
-    path: '/products/edit',
-    data
-  })
 }
 
 exports.editProduct = async (req, res) => {
   const { id, name, price, image } = req.body
 
-  const data = await product.update(id, { name, price, image })
+  if (!id, !name || !price || !image) {
+    return res.redirect(`/products/edit/${id}`)
+  }
 
-  res.json(data)
+  try {
+    const priceFormatted = convertValueToMoney(price)
+    await product.update({id, name, price: priceFormatted, image })
+  
+    return res.redirect('/')
+  } catch (err) {
+    return res.redirect(`/products/edit/${id}`)
+  }
 }
 

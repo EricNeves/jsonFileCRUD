@@ -32,12 +32,21 @@ class Product {
     return product
   }
 
-  async update(productID, data) { 
+  async update(data) { 
     const dataFromFile = await this._currentFileData()
 
-    const productIndex = dataFromFile.findIndex(({ id }) => id === productID)
+    const productIndex = dataFromFile.findIndex(({ id }) => id === data.id)
+    dataFromFile.splice(productIndex, 1)
 
-    return productIndex
+    const currentProduct = dataFromFile[productIndex]
+
+    const updatedProduct = Object.assign({}, currentProduct, data)
+
+    await writeFile(this.file, JSON.stringify([...dataFromFile, updatedProduct], null, 2))
+
+    return {
+      updated: true
+    }
   }
 }
 
