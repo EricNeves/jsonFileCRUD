@@ -12,7 +12,6 @@ exports.index = async (req, res) => {
     const { initial, offset } = req.query
 
     let lastProducts = false 
-    
     let initialFormatted = parseInt(initial)
     let offsetFormatted = parseInt(offset)
 
@@ -20,8 +19,8 @@ exports.index = async (req, res) => {
     
     const dataPartial = dataFromDB.slice(initialFormatted, offsetFormatted)
 
-    if (dataPartial.length === 0) {
-      return res.redirect('/?initial=0&offset=8')
+    if (!initial || !offset) { 
+      return res.status(301).redirect('/?initial=0&offset=8')
     }
 
     if (offsetFormatted > dataFromDB.length) {
