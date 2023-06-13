@@ -53,7 +53,7 @@ $ pnpm run dev
 
 ```
 > **Note**:
-> Você precisa ter o gerenciador de pacotes `pnpm`, você poderá instalá-lo a partir do comando `npm i -g pnpm`.
+> Você precisará ter o gerenciador de pacotes `pnpm` para executar a aplicação, você poderá instalá-lo a partir do comando `npm i -g pnpm`.
 
 
 ## License
