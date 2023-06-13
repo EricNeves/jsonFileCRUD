@@ -10,10 +10,10 @@
 <h4 align="center">Aplicação MVC desenvolvida com NodeJS, ExpressJS, EJS e entre outras tecnologias.</h4>
 
 <p align="center">
-  <img src="https://badge.fury.io/js/electron-markdownify.svg"
-         alt="Gitter">
-  <img src="https://badge.fury.io/js/electron-markdownify.svg"
-         alt="Gitter">
+  <img src="https://img.shields.io/github/last-commit/ericneves/jsonFileCRUD?style=flat-square"
+         alt="Commit">
+  <img src="https://img.shields.io/github/languages/top/ericneves/jsonFileCRUD?color=orange&style=flat-square"
+         alt="Language">
          <img src="https://badge.fury.io/js/electron-markdownify.svg"
          alt="Gitter">
 </p>
