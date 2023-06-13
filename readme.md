@@ -18,7 +18,7 @@
 <p align="center">
   <a href="#features">Features</a> •
   <a href="#how-to-use">How to use ?</a> •
-  <a href="#license">License</a>
+  <a href="#license">License</a> •
   <a href="#author">Author</a>
 </p>
 
