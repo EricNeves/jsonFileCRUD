@@ -40,8 +40,21 @@ A aplicação explora diversos recursos, como rotas, leituras e escrita de arqui
 
 ```bash
 # Clone repository
-$ git clone 
+$ git clone https://github.com/EricNeves/jsonFileCRUD.git
+
+# Install dependencies
+$ cd jsonFileCRUD && pnpm install 
+
+# Start 
+$ pnpm start
+
+# Start as dev
+$ pnpm run dev
+
 ```
+> **Note**:
+> Você precisa ter o gerenciador de pacotes `pnpm`, você poderá instalá-lo a partir do comando `npm i -g pnpm`.
+
 
 ## License
 
