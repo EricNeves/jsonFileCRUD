@@ -25,7 +25,14 @@
 
 ### Features
 
-* 
+* NodeJS
+  - ExpressJS
+  - EJS
+  - FS (File System)
+* CSS
+  - Light/Dark Theme
+* Javascript
+  - Switch Theme
 
 ## How To Use
 
