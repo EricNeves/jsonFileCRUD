@@ -17,8 +17,11 @@ class Product {
   async create(data) {
     const dataFromFile = await this._currentFileData()
     dataFromFile.unshift(data)
+    await writeFile(this.file, JSON.stringify(dataFromFile, null, 2))
 
-    return dataFromFile
+    return {
+      created: true
+    }
   }
 }
 

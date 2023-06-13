@@ -1,16 +1,18 @@
 const { join } = require('path')
+
 const { convertValueToMoney } = require('../lib/toMoney')
+const { uuid } = require('../lib/generateID')
 
 const Product = require('../models/Product')
-
 const product = new Product({
-  file: join(__dirname, '../../', 'data/sdb.json')
+  file: join(__dirname, '../../', 'data/db.json')
 })
 
 exports.index = (req, res) => {
   res.render('products/create', {
     title: 'Create Product',
     path: '/products/add-product',
+    error: ''
   })
 }
 
@@ -30,13 +32,19 @@ exports.create = async (req, res) => {
   }
 
   try {
-    await product.create({ name, price, image })
+    await product.create({ 
+      id: uuid(),
+      name, 
+      price: priceFormatted, 
+      image
+    })
     return res.redirect('/')
+
   } catch (err) {
     res.render('products/create', {
-      message: 'Sorry, could not create a new product',
-      title: 'Update Product',
-      path: '/products/edit',
+      title: 'Create Product',
+      path: '/products/create',
+      error: 'Sorry, could not create a new product',
     })
   }
 }

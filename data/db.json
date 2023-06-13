@@ -1,8 +1,32 @@
 [
   {
-    "id": 1,
-    "name": "Macbook",
-    "price": "2300",
-    "image": "https://files.tecnoblog.net/wp-content/uploads/2020/11/macbook-air-apple-m1-1-700x615.jpg" 
+    "id": "0da495a77cade6",
+    "name": "Rocket",
+    "price": "$3,456,345.00",
+    "image": "https://images.pexels.com/photos/256297/pexels-photo-256297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": "0076977cc6ca1b",
+    "name": "Instrumental",
+    "price": "$765.00",
+    "image": "https://images.pexels.com/photos/2876659/pexels-photo-2876659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": "00d6222fe8152f",
+    "name": "Headset",
+    "price": "$200.00",
+    "image": "https://images.pexels.com/photos/3587478/pexels-photo-3587478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": "01304592efc5e8",
+    "name": "Plant",
+    "price": "$40.00",
+    "image": "https://images.pexels.com/photos/2280551/pexels-photo-2280551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": "06126ebb8ba5bd",
+    "name": "Digital Cam",
+    "price": "$1,200.00",
+    "image": "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   }
 ]

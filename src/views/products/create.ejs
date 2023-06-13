@@ -9,8 +9,8 @@
         <i class="fa-solid fa-cart-plus"></i>
       </h1>
 
-      <% if (message) { %>
-        <p class="error"><%= message %></p>
+      <% if (error) { %>
+        <p class="error"><%= error %></p>
       <% } %>
       
       <form action="/products/create" method="POST">
