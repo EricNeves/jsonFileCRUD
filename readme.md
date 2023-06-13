@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src=".github/logo.png" alt="Markdownify"></a>
+  ![Image](.github/icon.png)
   <br>
   JSON File CRUD 
   <br>
