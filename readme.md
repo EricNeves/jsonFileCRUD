@@ -55,6 +55,9 @@ $ pnpm start
 # Start as dev
 $ pnpm run dev
 
+# Unit tests
+$ pnpm test
+
 ```
 > **Note**:
 > Você precisará ter o gerenciador de pacotes `pnpm` para executar a aplicação, você poderá instalá-lo a partir do comando `npm i -g pnpm`.
