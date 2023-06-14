@@ -1,4 +1,4 @@
-const { readFile, writeFile, appendFile } = require('fs/promises')
+const { readFile, writeFile } = require('fs/promises')
 
 class Product {
   constructor({ file }) {
