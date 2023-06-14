@@ -1,4 +1,4 @@
-const { readFile, writeFile } = require('fs/promises')
+const { readFile, writeFile, appendFile } = require('fs/promises')
 
 class Product {
   constructor({ file }) {
@@ -43,7 +43,7 @@ class Product {
 
     const updatedProduct = Object.assign({}, currentProduct, data)
 
-    await writeFile(this.file, JSON.stringify([...dataFromFile, updatedProduct], null, 2))
+    await writeFile(this.file, JSON.stringify([...dataFromFile, updatedProduct][0], null, 2))
 
     return true
   }
