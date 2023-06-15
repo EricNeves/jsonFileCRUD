@@ -35,6 +35,9 @@ A aplicação explora diversos recursos, como rotas, leituras e escrita de arqui
   - ExpressJS
   - EJS
   - FS (File System)
+  - Mocha 
+  - Chai
+  - Sinon
 * CSS
   - Light/Dark Theme
 * Javascript
