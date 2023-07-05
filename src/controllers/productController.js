@@ -11,7 +11,7 @@ const product = new Product({
 exports.index = (req, res) => {
   res.render('products/create', {
     title: 'Create Product',
-    path: '/products/add-product',
+    path: '/products/create',
     error: ''
   })
 }
