@@ -20,7 +20,7 @@ exports.create = async (req, res) => {
   const { name, price, image } = req.body
 
   if (!name || !price || !image) {
-    return res.redirect('/products/create')
+    return res.status(301).redirect('/products/create')
   }
 
   const priceFormatted = convertValueToMoney(price)
@@ -32,7 +32,7 @@ exports.create = async (req, res) => {
       price: priceFormatted,
       image
     })
-    return res.redirect('/')
+    return res.status(301).redirect('/')
 
   } catch (err) {
     return res.render('products/create', {
@@ -57,7 +57,7 @@ exports.editPage = async (req, res) => {
       data,
     })
   } catch (err) {
-    return res.redirect('/')
+    return res.status(301).redirect('/')
   }
 }
 
@@ -73,11 +73,11 @@ exports.editProduct = async (req, res) => {
     const result = await product.update({id, name, price: priceFormatted, image })
   
     if (!result) {
-      return res.redirect(`/products/edit/${id}`)
+      return res.status(301).redirect(`/products/edit/${id}`)
     } 
-    return res.redirect('/')
+    return res.status(301).redirect('/')
   } catch (err) {
-    return res.redirect(`/products/edit/${id}`)
+    return res.status(301).redirect(`/products/edit/${id}`)
   }
 }
 
@@ -87,7 +87,7 @@ exports.deleteProduct = async (req, res) => {
   try {
     const result = await product.delete(id)
 
-    if (!result) return res.redirect('/')
+    if (!result) return res.status(301).redirect('/')
 
     res.redirect('/')
   } catch (err) {
