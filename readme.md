@@ -68,7 +68,7 @@ $ pnpm test
 
 ### License
 
-<img src="https://img.shields.io/github/license/ericneves/jsonFileCRUD?color=blue&style=flat-square" alt="License">
+<img src="https://img.shields.io/github/license/ericneves/jsonfileCRUD?style=flat-square&logo=github" alt="License">
 
 ---
 
