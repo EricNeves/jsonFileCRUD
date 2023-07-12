@@ -12,7 +12,7 @@
 <p align="center">
   <img src="https://img.shields.io/github/last-commit/ericneves/jsonFileCRUD?style=flat-square" alt="Commit">
   <img src="https://img.shields.io/github/languages/top/ericneves/jsonFileCRUD?color=orange&style=flat-square" alt="Language">
-  <img src="https://img.shields.io/github/license/ericneves/jsonFileCRUD?color=blue&style=flat-square" alt="License">
+  <img src="https://img.shields.io/github/license/ericneves/jsonfileCRUD?style=flat-square&logo=github" alt="License">
 </p>
 
 <p align="center">
