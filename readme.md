@@ -10,7 +10,7 @@
 <h4 align="center">Aplicação MVC desenvolvida com NodeJS, ExpressJS, EJS e entre outras tecnologias.</h4>
 
 <p align="center">
-  <img src="https://img.shields.io/github/last-commit/ericneves/jsonFileCRUD?style=flat-square" alt="Commit">
+  <img src="https://img.shields.io/github/last-commit/ericneves/jsonFileCRUD?style=flat-square&logo=pnpm&logoColor=yellow&labelColor=dark&color=red" alt="Commit">
   <img src="https://img.shields.io/github/languages/top/ericneves/jsonFileCRUD?color=orange&style=flat-square" alt="Language">
   <img src="https://img.shields.io/github/license/ericneves/jsonfileCRUD?style=flat-square&logo=github" alt="License">
 </p>
