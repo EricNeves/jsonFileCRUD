@@ -9,6 +9,8 @@
 
 <h4 align="center">Aplicação MVC desenvolvida com NodeJS, ExpressJS, EJS, CSS e entre outras tecnologias.</h4>
 
+<p align="center">Data de criação: Jun 13, 2023</p>
+
 <p align="center">
   <img src="https://img.shields.io/github/last-commit/ericneves/jsonFileCRUD?style=flat-square&logo=pnpm&logoColor=yellow&labelColor=dark&color=red" alt="Commit">
   <img src="https://img.shields.io/github/languages/top/ericneves/jsonFileCRUD?style=flat-square&logo=javascript&logoColor=yellow&color=yellow" alt="Language">
